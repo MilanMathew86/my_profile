@@ -1,0 +1,39 @@
+MILAN MATHEW 
+mathewmilan86@gmail.com | (+91) 8089027452 
+https://github.com/MilanMathew86 | https://www.linkedin.com/in/milan-mathew-19216b326 
+EDUCATION 
+B-Tech Computer Science and Engineering (2024–2028) 
+Chinmaya Vishwa Vidyapeeth (S4) | CGPA: 9.69 
+CBSE Class XII – 86.8% 
+CBSE Class X – 92.8% 
+TECHNICAL SKILLS 
+Programming: Python, Java, C 
+Web & App: HTML, CSS, JavaScript, Flutter 
+Database: MySQL 
+Machine Learning: Regression, Classification, Model Evaluation (MAE, RMSE, R²), Feature Engineering 
+Libraries & Tools: NumPy, Pandas, Scikit-Learn, XGBoost, Matplotlib, Flask, Git 
+EXPERIENCE 
+Web Development Intern – Tisser Technologies (June 2025 | 1 Month) 
+• Developed responsive web interfaces using HTML, CSS, and JavaScript. 
+• Implemented interactive forms and UI components with DOM manipulation. 
+• Debugged and refined code to improve structure and maintainability. 
+PROJECTS 
+1. Crop Yield Prediction System 
+Developed an ML pipeline on a 1M+ dataset; trained Linear Regression and XGBRFRegressor models (R² ≈ 0.91) and 
+deployed via Flask. 
+2. Hostel Outpass Management System 
+Developing a full-stack hostel automation system using Flutter, PHP , and MySQL with role-based workflows and QR 
+verification. Final testing phase. 
+3. Restaurant Order Web Application 
+Built a multi-page restaurant ordering system using HTML, CSS, and JavaScript; implemented dynamic cart logic with 
+localStorage persistence, quantity control, and real-time price calculation. 
+4. HydroNet (Shortlisted for Institutional Startup Funding) 
+Designed system architecture for an AI-integrated hydroponic farming concept with IoT monitoring and AWG; 
+developed technical website and structured implementation documentation. 
+POSITION OF RESPONSIBILITY 
+Team Lead – SAUVC ASV Competition 
+Documentation Lead – IEEE OES | CVV Student Branch 
+Documentation Lead – IEDC | CVV Student Branch 
+ACHIEVEMENTS 
+Selected for leadership roles in institutional innovation initiatives 
+Active participant in technical and research-based competitions

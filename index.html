@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portfolio — Milan Mathew</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#">Milan Mathew</a>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1>Hi, I'm Milan Mathew</h1>
+            <p class="lead">B‑Tech CSE student (CGPA 9.69) — Web developer and Machine Learning enthusiast building responsive web apps and ML pipelines.</p>
+            <p class="cta-row"><a class="btn" href="#contact">Get in touch</a> <a class="btn ghost" href="#projects">View projects</a></p>
+          </div>
+          <div class="hero-media">
+            <img alt="Milan Mathew photo" src="1769798017377.jpeg"/>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section container about">
+        <h2>About Me</h2>
+        <p>Milan Mathew — Computer Science undergraduate at Chinmaya Vishwa Vidyapeeth (B‑Tech, CGPA 9.69). Experienced in building responsive web interfaces and deploying ML models via Flask. Active in institutional innovation and leadership roles related to robotics and documentation.</p>
+        <p><strong>Education:</strong> B‑Tech Computer Science and Engineering (2024–2028), Chinmaya Vishwa Vidyapeeth. CBSE Class XII – 86.8%, Class X – 92.8%.</p>
+      </section>
+
+      <section id="projects" class="section projects">
+        <div class="container">
+          <h2>Selected Projects</h2>
+          <div class="grid projects-grid">
+            <article class="card">
+              <h3>Crop Yield Prediction System</h3>
+              <p>Built an ML pipeline on a 1M+ dataset; trained Linear Regression and XGBRFRegressor models (R² ≈ 0.91) and deployed via Flask.</p>
+              <p class="card-links"><a href="#">Live</a> · <a href="https://github.com/MilanMathew86" target="_blank">Source</a></p>
+            </article>
+            <article class="card">
+              <h3>Hostel Outpass Management System</h3>
+              <p>Full‑stack automation using Flutter, PHP and MySQL with role‑based workflows and QR verification. Currently in final testing.</p>
+              <p class="card-links"><a href="#">Live</a> · <a href="https://github.com/MilanMathew86" target="_blank">Source</a></p>
+            </article>
+            <article class="card">
+              <h3>Restaurant Order Web Application</h3>
+              <p>Multi‑page ordering system using HTML, CSS and JavaScript; dynamic cart logic with localStorage persistence and real‑time price calculation.</p>
+              <p class="card-links"><a href="#">Live</a> · <a href="https://github.com/MilanMathew86" target="_blank">Source</a></p>
+            </article>
+            <article class="card">
+              <h3>HydroNet (Startup - Shortlisted)</h3>
+              <p>System architecture for AI‑integrated hydroponic farming with IoT monitoring; prepared technical website and implementation documentation.</p>
+              <p class="card-links"><a href="#">Live</a> · <a href="https://github.com/MilanMathew86" target="_blank">Source</a></p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section container skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li>Python</li>
+          <li>Java</li>
+          <li>C</li>
+          <li>HTML &amp; CSS &amp; JavaScript</li>
+          <li>Flutter</li>
+          <li>MySQL</li>
+          <li>NumPy, Pandas, Scikit‑Learn, XGBoost</li>
+          <li>Flask, Git</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>If you'd like to work together or ask a question, send a message or use the links below.</p>
+          <p><strong>Email:</strong> <a href="mailto:mathewmilan86@gmail.com">mathewmilan86@gmail.com</a> &nbsp; • &nbsp; <strong>Phone:</strong> (+91) 8089027452</p>
+          <p><a href="https://github.com/MilanMathew86" target="_blank">GitHub</a> · <a href="https://www.linkedin.com/in/milan-mathew-19216b326" target="_blank">LinkedIn</a></p>
+          <form id="contact-form" class="contact-form">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" required />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div class="form-row actions">
+              <button class="btn" type="submit">Send Message</button>
+              <div id="form-status" aria-live="polite"></div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> Your Name — Built with care.</p>
+        <nav class="footer-nav"><a href="#">Privacy</a><a href="#">GitHub</a></nav>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
