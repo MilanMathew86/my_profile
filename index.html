@@ -1,124 +1,269 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Portfolio — Milan Mathew</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milan Mathew | Portfolio</title>
+
     <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="logo" href="#">Milan Mathew</a>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+
+        <a href="#" class="logo">Milan Mathew</a>
+
         <nav class="nav">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#contact">Contact</a>
         </nav>
-      </div>
-    </header>
 
-    <main>
-      <section class="hero">
-        <div class="container hero-inner">
-          <div class="hero-copy">
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container hero-inner">
+
+        <div class="hero-copy">
+
             <h1>Hi, I'm Milan Mathew</h1>
-            <p class="lead">B‑Tech CSE student (CGPA 9.69) — Web developer and Machine Learning enthusiast building responsive web apps and ML pipelines.</p>
-            <p class="cta-row"><a class="btn" href="#contact">Get in touch</a> <a class="btn ghost" href="#projects">View projects</a></p>
-          </div>
-          <div class="hero-media">
-            <img alt="Milan Mathew photo" src="1769798017377.jpeg"/>
-          </div>
+
+            <p class="lead">
+                Computer Science undergraduate (CGPA 9.69) passionate about
+                Machine Learning, Full-Stack Development, AI-driven solutions
+                and innovation.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#contact" class="btn">
+                    Contact Me
+                </a>
+
+                <a href="#projects" class="btn ghost">
+                    View Projects
+                </a>
+
+                <a href="MILANMATHEW_RESUME.pdf" class="btn ghost" download>
+                    Resume
+                </a>
+
+            </div>
+
         </div>
-      </section>
 
-      <section id="about" class="section container about">
-        <h2>About Me</h2>
-        <p>Milan Mathew — Computer Science undergraduate at Chinmaya Vishwa Vidyapeeth (B‑Tech, CGPA 9.69). Experienced in building responsive web interfaces and deploying ML models via Flask. Active in institutional innovation and leadership roles related to robotics and documentation.</p>
-        <p><strong>Education:</strong> B‑Tech Computer Science and Engineering (2024–2028), Chinmaya Vishwa Vidyapeeth. CBSE Class XII – 86.8%, Class X – 92.8%.</p>
-      </section>
-
-      <section id="projects" class="section projects">
-        <div class="container">
-          <h2>Selected Projects</h2>
-          <div class="grid projects-grid">
-            <article class="card">
-              <h3>Crop Yield Prediction System</h3>
-              <p>Built an ML pipeline on a 1M+ dataset; trained Linear Regression and XGBRFRegressor models (R² ≈ 0.91) and deployed via Flask.</p>
-              <p class="card-links"><a href="#">Live</a> · <a href="https://github.com/MilanMathew86" target="_blank">Source</a></p>
-            </article>
-            <article class="card">
-              <h3>Hostel Outpass Management System</h3>
-              <p>Full‑stack automation using Flutter, PHP and MySQL with role‑based workflows and QR verification. Currently in final testing.</p>
-              <p class="card-links"><a href="#">Live</a> · <a href="https://github.com/MilanMathew86" target="_blank">Source</a></p>
-            </article>
-            <article class="card">
-              <h3>Restaurant Order Web Application</h3>
-              <p>Multi‑page ordering system using HTML, CSS and JavaScript; dynamic cart logic with localStorage persistence and real‑time price calculation.</p>
-              <p class="card-links"><a href="#">Live</a> · <a href="https://github.com/MilanMathew86" target="_blank">Source</a></p>
-            </article>
-            <article class="card">
-              <h3>HydroNet (Startup - Shortlisted)</h3>
-              <p>System architecture for AI‑integrated hydroponic farming with IoT monitoring; prepared technical website and implementation documentation.</p>
-              <p class="card-links"><a href="#">Live</a> · <a href="https://github.com/MilanMathew86" target="_blank">Source</a></p>
-            </article>
-          </div>
+        <div class="hero-media">
+            <img src="1769798017377.jpeg" alt="Milan Mathew">
         </div>
-      </section>
 
-      <section id="skills" class="section container skills">
-        <h2>Skills</h2>
-        <ul class="skills-list">
-          <li>Python</li>
-          <li>Java</li>
-          <li>C</li>
-          <li>HTML &amp; CSS &amp; JavaScript</li>
-          <li>Flutter</li>
-          <li>MySQL</li>
-          <li>NumPy, Pandas, Scikit‑Learn, XGBoost</li>
-          <li>Flask, Git</li>
+    </div>
+</section>
+
+<section id="about" class="section container">
+
+    <h2>About Me</h2>
+
+    <p>
+        I am a B.Tech Computer Science student at
+        Chinmaya Vishwavidyapeeth with a CGPA of 9.69.
+        My interests include Machine Learning,
+        Full Stack Development, Artificial Intelligence,
+        and solving real-world problems using technology.
+    </p>
+
+    <p>
+        I enjoy building intelligent systems,
+        web applications, and innovative projects that
+        create social and environmental impact.
+    </p>
+
+</section>
+
+<section id="experience" class="section container">
+
+    <h2>Experience</h2>
+
+    <div class="card">
+
+        <h3>NIT Goa Summer Internship</h3>
+
+        <p>
+            Worked on Machine Learning and Data Analytics tasks involving:
+        </p>
+
+        <ul>
+            <li>Dataset preprocessing</li>
+            <li>Data cleaning</li>
+            <li>Feature engineering</li>
+            <li>Model experimentation</li>
+            <li>Technical documentation</li>
         </ul>
-      </section>
 
-      <section id="contact" class="section contact">
-        <div class="container">
-          <h2>Contact</h2>
-          <p>If you'd like to work together or ask a question, send a message or use the links below.</p>
-          <p><strong>Email:</strong> <a href="mailto:mathewmilan86@gmail.com">mathewmilan86@gmail.com</a> &nbsp; • &nbsp; <strong>Phone:</strong> (+91) 8089027452</p>
-          <p><a href="https://github.com/MilanMathew86" target="_blank">GitHub</a> · <a href="https://www.linkedin.com/in/milan-mathew-19216b326" target="_blank">LinkedIn</a></p>
-          <form id="contact-form" class="contact-form">
-            <div class="form-row">
-              <label for="name">Name</label>
-              <input id="name" name="name" required />
-            </div>
-            <div class="form-row">
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" required />
-            </div>
-            <div class="form-row">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <div class="form-row actions">
-              <button class="btn" type="submit">Send Message</button>
-              <div id="form-status" aria-live="polite"></div>
-            </div>
-          </form>
-        </div>
-      </section>
-    </main>
+    </div>
 
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <p>&copy; <span id="year"></span> Your Name — Built with care.</p>
-        <nav class="footer-nav"><a href="#">Privacy</a><a href="#">GitHub</a></nav>
-      </div>
-    </footer>
+</section>
 
-    <script src="script.js"></script>
-  </body>
+<section id="projects" class="section">
+
+<div class="container">
+
+<h2>Projects</h2>
+
+<div class="projects-grid">
+
+<div class="card">
+<h3>Crop Yield Prediction System</h3>
+
+<p>
+Machine Learning system trained on 1M+ records
+with R² ≈ 0.91.
+</p>
+
+<p>
+<strong>Tech:</strong>
+Python, Flask, XGBoost, Pandas, Scikit-Learn
+</p>
+</div>
+
+<div class="card">
+<h3>Hostel Outpass Management System</h3>
+
+<p>
+Role-based automation platform with QR verification.
+</p>
+
+<p>
+<strong>Tech:</strong>
+Flutter, PHP, MySQL
+</p>
+</div>
+
+<div class="card">
+<h3>Restaurant Ordering System</h3>
+
+<p>
+Multi-page ordering website with dynamic cart.
+</p>
+
+<p>
+<strong>Tech:</strong>
+HTML, CSS, JavaScript
+</p>
+</div>
+
+<div class="card">
+<h3>HydroNet</h3>
+
+<p>
+AI + IoT based hydroponic farming startup project.
+</p>
+
+<p>
+<strong>Tech:</strong>
+Python, IoT, ESP32, Hydroponics
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="skills" class="section container">
+
+<h2>Technical Skills</h2>
+
+<h3>Programming</h3>
+<ul class="skills-list">
+<li>Python</li>
+<li>Java</li>
+<li>C</li>
+<li>JavaScript</li>
+</ul>
+
+<h3>Web Development</h3>
+<ul class="skills-list">
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+<li>Flask</li>
+</ul>
+
+<h3>Machine Learning</h3>
+<ul class="skills-list">
+<li>Scikit-Learn</li>
+<li>XGBoost</li>
+<li>Pandas</li>
+<li>NumPy</li>
+</ul>
+
+<h3>Tools</h3>
+<ul class="skills-list">
+<li>Git</li>
+<li>GitHub</li>
+<li>VS Code</li>
+<li>Arduino IDE</li>
+<li>MySQL</li>
+</ul>
+
+</section>
+
+<section id="achievements" class="section container">
+
+<h2>Achievements</h2>
+
+<div class="card">
+
+<ul>
+<li>CGPA 9.69</li>
+<li>HydroNet Startup Project</li>
+<li>NIT Goa Summer Internship</li>
+<li>Built ML model with R² ≈ 0.91</li>
+<li>Innovation and entrepreneurship participation</li>
+</ul>
+
+</div>
+
+</section>
+
+<section id="contact" class="section container">
+
+<h2>Contact</h2>
+
+<p>Email: mathewmilan86@gmail.com</p>
+<p>Phone: +91 8089027452</p>
+
+<p>
+<a href="https://github.com/MilanMathew86">GitHub</a> |
+<a href="https://www.linkedin.com/in/milan-mathew-19216b326">LinkedIn</a>
+</p>
+
+</section>
+
+<footer class="site-footer">
+
+<div class="container footer-inner">
+
+<p>
+© <span id="year"></span> Milan Mathew.
+Designed and Developed by Milan Mathew.
+</p>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
 </html>
+
