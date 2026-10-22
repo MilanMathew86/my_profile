@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Milan Mathew | Portfolio</title>
 
+    <meta name="description" content="Milan Mathew, Computer Science undergraduate at Chinmaya Vishwa Vidyapeeth (CGPA 9.72), building machine learning for speech, coral reef imaging and crop yield prediction.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://reachmilan.com/">
+    <meta property="og:title" content="Milan Mathew | Portfolio">
+    <meta property="og:description" content="I build machine learning for the real world: identifying Indian languages from speech, reading coral reef health from images, and predicting crop yields with honest uncertainty.">
+    <meta property="og:image" content="https://reachmilan.com/1769798017377.jpeg">
+    <meta property="og:image:alt" content="Milan Mathew">
+
     <link rel="stylesheet" href="styles.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
@@ -15,22 +24,21 @@
 <header class="site-header">
     <div class="container header-inner">
 
-        <a href="#" class="logo">Milan Mathew</a>
+        <a href="#top" class="logo">Milan Mathew</a>
 
         <nav class="nav">
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
             <a href="#publications">Publications</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#awards">Awards &amp; Leadership</a>
             <a href="#skills">Skills</a>
-            <a href="#achievements">Achievements</a>
             <a href="#contact">Contact</a>
         </nav>
 
     </div>
 </header>
 
-<section class="hero">
+<section id="top" class="hero">
     <div class="container hero-inner">
 
         <div class="hero-copy">
@@ -38,11 +46,22 @@
             <h1>Hi, I'm Milan Mathew</h1>
 
             <p class="lead">
-                Computer Science undergraduate (CGPA 9.72) working on
-                applied Machine Learning, speech and vision AI, and
-                full-stack development, with research presented at
-                BITS Pilani and OCEANAI-2026.
+                I build machine learning for the real world: identifying
+                Indian languages from speech, reading coral reef health from
+                images, and predicting crop yields with honest uncertainty.
             </p>
+
+            <p class="hero-edu">
+                B.Tech Computer Science and Engineering, Chinmaya Vishwa Vidyapeeth,
+                Ernakulam, Kerala (2024 – 2028)
+            </p>
+
+            <ul class="stats">
+                <li><strong>9.72</strong> CGPA</li>
+                <li><strong>2</strong> research papers</li>
+                <li><strong>4</strong> conference contributions</li>
+                <li><strong>3</strong> competition prizes</li>
+            </ul>
 
             <div class="hero-buttons">
 
@@ -69,29 +88,161 @@
     </div>
 </section>
 
-<section id="about" class="section container">
+<section id="publications" class="section container">
 
-    <h2>About Me</h2>
+<h2>Publications</h2>
 
-    <p>
-        I am a B.Tech Computer Science and Engineering student (2024 – 2028)
-        at Chinmaya Vishwa Vidyapeeth, Ernakulam, Kerala, with a CGPA of 9.72 / 10.
-        My interests include Machine Learning, speech and computer vision,
-        uncertainty-aware AI, and full-stack development.
-    </p>
+<h3>Research Papers</h3>
 
-    <p>
-        I enjoy building intelligent systems and applications that solve
-        real-world problems, from spoken language identification and crop
-        yield prediction to AI-driven coral reef health monitoring.
-    </p>
+<div class="card">
+<ul class="pub-list">
+<li>
+<strong>Uncertainty-Aware, Explainable AutoML for Crop Yield Prediction: A Conformal Prediction Approach</strong> (First Author).
+BDA 2026, BITS Pilani, Sept 2026.
+<span class="badge">Full Paper · Presented</span>
+</li>
+<li>
+<strong>Uncertainty-Aware Distributed Clustering of Streaming Data</strong> (First Author).
+ICITIIT 2027, IIIT Kottayam.
+<span class="badge badge-pending">Under Review</span>
+</li>
+</ul>
+</div>
 
-    <p class="card-meta">
-        <strong>Relevant Coursework:</strong>
-        Data Structures and Algorithms, Object-Oriented Programming,
-        Database Management Systems (NPTEL), Theory of Computation (NPTEL)
-    </p>
+<h3 class="subhead">Presentations &amp; Posters</h3>
 
+<div class="card">
+<ul class="pub-list">
+<li>
+<strong>CoralSense AI: AI-Integrated Drifting Buoy Platform for Coral Reef Health Assessment</strong> (Co-author).
+OCEANAI-2026, Sathyabama Research Park, Chennai, Sept 2026.
+<span class="badge">Abstract · Oral</span>
+</li>
+<li>
+<strong>Algorithmic Myopia in Platform Ecosystems: Exploitation vs. Entry in Gig-Economy Labor Markets</strong> (Co-author).
+ISC 2026, IIM Bangalore, Dec 2026.
+<span class="badge">Poster</span>
+</li>
+</ul>
+</div>
+
+</section>
+
+<section id="projects" class="section">
+
+<div class="container">
+
+<h2>Projects</h2>
+
+<div class="projects-grid">
+
+<!-- TODO: replace placeholder images and set the GitHub / demo hrefs on each card -->
+
+<article class="card project-card">
+
+<!-- Before/after placeholder: swap the two panes for <img> tags of a raw and an enhanced reef image -->
+<div class="ba-slider" style="--pos:50%">
+    <div class="ba-pane ba-before">Before<br>(raw)</div>
+    <div class="ba-pane ba-after">After<br>(enhanced)</div>
+    <input type="range" min="0" max="100" value="50" aria-label="Compare before and after">
+</div>
+
+<h3>CoralSense AI</h3>
+<p class="card-meta">Ongoing · Oceanic AI Lab · Team of two</p>
+
+<p><strong>Problem:</strong> Reef-health surveys are expensive and sparse, so bleaching often goes unrecorded.</p>
+<p><strong>Approach:</strong> A low-cost drifting buoy with underwater imaging, temperature/pH/salinity sensing and GPS. I'm building the AI pipeline: underwater image enhancement followed by U-Net segmentation of coral as Healthy, Bleached or Dead, trained on Coralscapes (2,075 annotated images).</p>
+<p><strong>Result:</strong> Geo-referenced reef-health records; presented orally at OCEANAI-2026. Software stage nearing completion, hardware integration next.</p>
+
+<ul class="tags">
+<li>Python</li>
+<li>U-Net</li>
+<li>Computer Vision</li>
+<li>Sensors &amp; GPS</li>
+</ul>
+
+<div class="project-links">
+<a href="#" class="link-placeholder">GitHub</a>
+<a href="#" class="link-placeholder">Demo</a>
+</div>
+
+</article>
+
+<article class="card project-card">
+
+<div class="project-media">Image coming soon</div>
+
+<h3>Spoken Language Identification</h3>
+<p class="card-meta">NIT Goa Research Internship · Summer 2026</p>
+
+<p><strong>Problem:</strong> Identify which of 8 Indian languages is spoken in an audio recording.</p>
+<p><strong>Approach:</strong> MFCC features from the IIT Mandi ReadSpeech dataset; 8 classifiers benchmarked with 5-fold cross-validation and confusion-matrix analysis.</p>
+<p><strong>Result:</strong> Tuned SVM reached 91.99% test accuracy, deployed in a Flask web app.</p>
+
+<ul class="tags">
+<li>Python</li>
+<li>Scikit-learn</li>
+<li>Flask</li>
+</ul>
+
+<div class="project-links">
+<a href="#" class="link-placeholder">GitHub</a>
+<a href="#" class="link-placeholder">Demo</a>
+</div>
+
+</article>
+
+<article class="card project-card">
+
+<div class="project-media">Image coming soon</div>
+
+<h3>CVV Hostel E-Outpass System</h3>
+<p class="card-meta">Completed 2026</p>
+
+<p><strong>Problem:</strong> Hostel outpasses ran on paper, email and WhatsApp, with no reliable approval trail.</p>
+<p><strong>Approach:</strong> Parent OTP login, role-based approval routing to teachers and wardens by academic-calendar rules, and QR e-outpasses scanned at the main gate for exit and return.</p>
+<p><strong>Result:</strong> Submitted to the college administration for adoption as the official outpass system.</p>
+
+<ul class="tags">
+<li>Flutter</li>
+<li>PHP</li>
+<li>MySQL</li>
+</ul>
+
+<div class="project-links">
+<a href="#" class="link-placeholder">GitHub</a>
+<a href="#" class="link-placeholder">Demo</a>
+</div>
+
+</article>
+
+<article class="card project-card">
+
+<div class="project-media">Image coming soon</div>
+
+<h3>Crop Yield Prediction</h3>
+
+<p><strong>Problem:</strong> Predict crop yields, and say how confident each prediction is.</p>
+<p><strong>Approach:</strong> End-to-end ML pipeline on 1M+ rows with Linear Regression and XGBRFRegressor, extended with conformal prediction intervals.</p>
+<p><strong>Result:</strong> R² ≈ 0.91, deployed as a Flask web app; the uncertainty work became a BDA 2026 paper.</p>
+
+<ul class="tags">
+<li>Python</li>
+<li>Scikit-learn</li>
+<li>XGBoost</li>
+<li>Flask</li>
+</ul>
+
+<div class="project-links">
+<a href="#" class="link-placeholder">GitHub</a>
+<a href="#" class="link-placeholder">Demo</a>
+</div>
+
+</article>
+
+</div>
+
+</div>
 </section>
 
 <section id="experience" class="section container">
@@ -100,17 +251,17 @@
 
     <div class="card">
 
-        <h3>Summer Research Intern, Applied Machine Learning in Speech</h3>
+        <h3>Summer Research Intern, Applied ML in Speech</h3>
 
         <p class="card-meta">
-            National Institute of Technology (NIT) Goa · Summer 2026<br>
-            Mentor: Dr. Veena Thenkanidiyoor, Associate Professor and Head, Department of CSE
+            NIT Goa · Summer 2026<br>
+            Mentor: Dr. Veena Thenkanidiyoor, Associate Professor and Head, Dept. of CSE
         </p>
 
         <ul>
-            <li>Built a spoken language identification system for 8 Indian languages using the IIT Mandi ReadSpeech dataset, with MFCC feature extraction and feature standardization.</li>
-            <li>Benchmarked 8 classifiers (Naive Bayes, Perceptron, SVM, Random Forest, KNN, MLP, XGBoost, tuned SVM) with 5-fold cross-validation and confusion-matrix analysis; the tuned SVM achieved the best test accuracy of <strong>91.99%</strong>.</li>
-            <li>Deployed the best model in a Flask web app that predicts the language of an input audio recording.</li>
+            <li>Built a spoken language identification system for 8 Indian languages on the IIT Mandi ReadSpeech dataset using MFCC features.</li>
+            <li>Benchmarked 8 classifiers with 5-fold cross-validation; a tuned SVM achieved the best test accuracy of <strong>91.99%</strong>.</li>
+            <li>Deployed the best model in a Flask web app that predicts the language of an audio recording.</li>
         </ul>
 
     </div>
@@ -124,121 +275,36 @@
         </p>
 
         <ul>
-            <li>Built responsive web interfaces and interactive forms using HTML, CSS and JavaScript (DOM manipulation); debugged and refactored code to improve structure and maintainability.</li>
+            <li>Built responsive interfaces and interactive forms in HTML, CSS and JavaScript.</li>
+            <li>Refactored code to improve structure and maintainability.</li>
         </ul>
 
     </div>
 
 </section>
 
-<section id="projects" class="section">
+<section id="awards" class="section container">
 
-<div class="container">
+<h2>Awards &amp; Leadership</h2>
 
-<h2>Projects</h2>
-
-<div class="projects-grid">
+<div class="two-col">
 
 <div class="card">
-<h3>CVV Hostel E-Outpass System</h3>
-
-<p class="card-meta">Completed 2026</p>
-
-<p>
-Full-stack app replacing the college's manual outpass process
-(paper, email and WhatsApp), with parent OTP login, role-based
-approval routing to teachers and wardens based on academic-calendar
-rules, and QR e-outpasses scanned at the main gate for exit and return.
-Submitted to the college administration for adoption as the official
-outpass system.
-</p>
-
-<p>
-<strong>Tech:</strong>
-Flutter, PHP, MySQL
-</p>
-</div>
-
-<div class="card">
-<h3>CoralSense AI</h3>
-
-<p class="card-meta">Oceanic AI Lab (college-funded) · Ongoing</p>
-
-<p>
-AI-integrated, low-cost drifting buoy for coral reef health assessment,
-combining underwater imaging, temperature, pH and salinity sensing, and
-GPS for geo-referenced reef-health records. I'm building the AI pipeline:
-underwater image enhancement and U-Net segmentation classifying coral as
-Healthy, Bleached or Dead, trained on the Coralscapes dataset
-(2,075 expert-annotated images).
-</p>
-
-<p>
-<strong>Tech:</strong>
-Python, U-Net, Computer Vision, Sensors, GPS
-</p>
-</div>
-
-<div class="card">
-<h3>Crop Yield Prediction System</h3>
-
-<p>
-End-to-end ML pipeline on a 1M+ row dataset; trained Linear Regression
-and XGBRFRegressor models (R² ≈ 0.91) and deployed the model as a
-Flask web application.
-</p>
-
-<p>
-<strong>Tech:</strong>
-Python, Scikit-learn, XGBoost, Flask
-</p>
-</div>
-
-<div class="card">
-<h3>Spoken Language Identification</h3>
-
-<p class="card-meta">NIT Goa Research Internship</p>
-
-<p>
-Identifies 8 Indian languages from speech using MFCC features;
-tuned SVM reached 91.99% test accuracy, served through a Flask web app.
-</p>
-
-<p>
-<strong>Tech:</strong>
-Python, Scikit-learn, XGBoost, Flask
-</p>
-</div>
-
-</div>
-
-</div>
-</section>
-
-<section id="publications" class="section container">
-
-<h2>Publications and Presentations</h2>
-
-<div class="card">
-
-<ul class="pub-list">
-<li>
-<strong>Uncertainty-Aware, Explainable AutoML for Crop Yield Prediction: A Conformal Prediction Approach</strong> (First Author).
-Accepted and presented at Big Data and AI 2026 (BDA 2026), BITS Pilani, September 2026.
-</li>
-<li>
-<strong>Uncertainty-Aware Distributed Clustering of Streaming Data</strong> (First Author).
-Under review, ICITIIT 2027, IIIT Kottayam.
-</li>
-<li>
-<strong>Algorithmic Myopia in Platform Ecosystems: Exploitation vs. Entry in Gig-Economy Labor Markets</strong> (Co-author).
-Accepted after double-blind review for poster presentation, India Strategy Conference (ISC) 2026, IIM Bangalore, December 2026.
-</li>
-<li>
-<strong>CoralSense AI: AI-Integrated Drifting Buoy Platform for Coral Reef Health Assessment</strong> (Co-author).
-Oral presentation, OCEANAI-2026, Sathyabama Research Park, Chennai, September 2026.
-</li>
+<h3>Awards</h3>
+<ul>
+<li>Second Prize, Smart India Hackathon 2025 Internal Round: <em>HydroNet</em> (AI + IoT hydroponics concept)</li>
+<li>Second Prize, Smart India Hackathon 2024 Internal Round: <em>Ayushvatika</em> (Virtual Herbal Garden)</li>
+<li>First Prize, Catalyst Idea Pitch (inter-college): <em>HydroNet</em></li>
 </ul>
+</div>
+
+<div class="card">
+<h3>Leadership</h3>
+<ul>
+<li>Documentation Lead, IEEE Oceanic Engineering Society, CVV Student Branch</li>
+<li>Documentation Lead, IEDC, CVV</li>
+</ul>
+</div>
 
 </div>
 
@@ -259,7 +325,7 @@ Oral presentation, OCEANAI-2026, Sathyabama Research Park, Chennai, September 20
 <li>SQL</li>
 </ul>
 
-<h3>Web and Mobile</h3>
+<h3>Web &amp; Mobile</h3>
 <ul class="skills-list">
 <li>Flutter</li>
 <li>Flask</li>
@@ -274,45 +340,16 @@ Oral presentation, OCEANAI-2026, Sathyabama Research Park, Chennai, September 20
 <li>NumPy</li>
 <li>Pandas</li>
 <li>Matplotlib</li>
-<li>Classification &amp; Regression</li>
-<li>Cross-Validation</li>
 <li>Conformal Prediction</li>
-<li>MFCC Speech Features</li>
-<li>U-Net Semantic Segmentation</li>
+<li>MFCC Features</li>
+<li>U-Net Segmentation</li>
 </ul>
 
-<h3>Databases and Tools</h3>
+<h3>Tools</h3>
 <ul class="skills-list">
 <li>MySQL</li>
 <li>Git</li>
 </ul>
-
-</section>
-
-<section id="achievements" class="section container">
-
-<h2>Achievements</h2>
-
-<div class="card">
-
-<ul>
-<li>Second Prize, Smart India Hackathon (SIH) 2025 Internal Round, for <em>HydroNet</em> (AI + IoT hydroponics concept).</li>
-<li>Second Prize, Smart India Hackathon (SIH) 2024 Internal Round, for <em>Ayushvatika: Virtual Herbal Garden</em>.</li>
-<li>First Prize, Catalyst Idea Pitch (inter-college competition), for <em>HydroNet</em>.</li>
-</ul>
-
-</div>
-
-<h3 class="subhead">Positions of Responsibility</h3>
-
-<div class="card">
-
-<ul>
-<li>Documentation Lead, IEEE Oceanic Engineering Society (OES), CVV Student Branch</li>
-<li>Documentation Lead, IEDC, CVV</li>
-</ul>
-
-</div>
 
 </section>
 
@@ -321,12 +358,10 @@ Oral presentation, OCEANAI-2026, Sathyabama Research Park, Chennai, September 20
 <h2>Contact</h2>
 
 <p>Email: <a href="mailto:mathewmilan86@gmail.com">mathewmilan86@gmail.com</a></p>
-<p>Phone: +91 8089027452</p>
 
 <p>
 <a href="https://github.com/MilanMathew86">GitHub</a> |
-<a href="https://www.linkedin.com/in/milan-mathew-19216b326">LinkedIn</a> |
-<a href="https://reachmilan.com">reachmilan.com</a>
+<a href="https://www.linkedin.com/in/milan-mathew-19216b326">LinkedIn</a>
 </p>
 
 </section>
