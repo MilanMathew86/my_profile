@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,6 +21,7 @@
             <a href="#about">About</a>
             <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
+            <a href="#publications">Publications</a>
             <a href="#skills">Skills</a>
             <a href="#achievements">Achievements</a>
             <a href="#contact">Contact</a>
@@ -38,9 +38,10 @@
             <h1>Hi, I'm Milan Mathew</h1>
 
             <p class="lead">
-                Computer Science undergraduate (CGPA 9.69) passionate about
-                Machine Learning, Full-Stack Development, AI-driven solutions
-                and innovation.
+                Computer Science undergraduate (CGPA 9.72) working on
+                applied Machine Learning, speech and vision AI, and
+                full-stack development, with research presented at
+                BITS Pilani and OCEANAI-2026.
             </p>
 
             <div class="hero-buttons">
@@ -53,7 +54,7 @@
                     View Projects
                 </a>
 
-                <a href="MILANMATHEW_RESUME.pdf" class="btn ghost" download>
+                <a href="MILAN_MATHEW_RESUME.pdf" class="btn ghost" download>
                     Resume
                 </a>
 
@@ -73,17 +74,22 @@
     <h2>About Me</h2>
 
     <p>
-        I am a B.Tech Computer Science student at
-        Chinmaya Vishwavidyapeeth with a CGPA of 9.69.
-        My interests include Machine Learning,
-        Full Stack Development, Artificial Intelligence,
-        and solving real-world problems using technology.
+        I am a B.Tech Computer Science and Engineering student (2024 – 2028)
+        at Chinmaya Vishwa Vidyapeeth, Ernakulam, Kerala, with a CGPA of 9.72 / 10.
+        My interests include Machine Learning, speech and computer vision,
+        uncertainty-aware AI, and full-stack development.
     </p>
 
     <p>
-        I enjoy building intelligent systems,
-        web applications, and innovative projects that
-        create social and environmental impact.
+        I enjoy building intelligent systems and applications that solve
+        real-world problems, from spoken language identification and crop
+        yield prediction to AI-driven coral reef health monitoring.
+    </p>
+
+    <p class="card-meta">
+        <strong>Relevant Coursework:</strong>
+        Data Structures and Algorithms, Object-Oriented Programming,
+        Database Management Systems (NPTEL), Theory of Computation (NPTEL)
     </p>
 
 </section>
@@ -94,18 +100,31 @@
 
     <div class="card">
 
-        <h3>NIT Goa Summer Internship</h3>
+        <h3>Summer Research Intern, Applied Machine Learning in Speech</h3>
 
-        <p>
-            Worked on Machine Learning and Data Analytics tasks involving:
+        <p class="card-meta">
+            National Institute of Technology (NIT) Goa · Summer 2026<br>
+            Mentor: Dr. Veena Thenkanidiyoor, Associate Professor and Head, Department of CSE
         </p>
 
         <ul>
-            <li>Dataset preprocessing</li>
-            <li>Data cleaning</li>
-            <li>Feature engineering</li>
-            <li>Model experimentation</li>
-            <li>Technical documentation</li>
+            <li>Built a spoken language identification system for 8 Indian languages using the IIT Mandi ReadSpeech dataset, with MFCC feature extraction and feature standardization.</li>
+            <li>Benchmarked 8 classifiers (Naive Bayes, Perceptron, SVM, Random Forest, KNN, MLP, XGBoost, tuned SVM) with 5-fold cross-validation and confusion-matrix analysis; the tuned SVM achieved the best test accuracy of <strong>91.99%</strong>.</li>
+            <li>Deployed the best model in a Flask web app that predicts the language of an input audio recording.</li>
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Web Development Intern</h3>
+
+        <p class="card-meta">
+            Tisser Technologies · June 2025 (1 month)
+        </p>
+
+        <ul>
+            <li>Built responsive web interfaces and interactive forms using HTML, CSS and JavaScript (DOM manipulation); debugged and refactored code to improve structure and maintainability.</li>
         </ul>
 
     </div>
@@ -121,24 +140,17 @@
 <div class="projects-grid">
 
 <div class="card">
-<h3>Crop Yield Prediction System</h3>
+<h3>CVV Hostel E-Outpass System</h3>
+
+<p class="card-meta">Completed 2026</p>
 
 <p>
-Machine Learning system trained on 1M+ records
-with R² ≈ 0.91.
-</p>
-
-<p>
-<strong>Tech:</strong>
-Python, Flask, XGBoost, Pandas, Scikit-Learn
-</p>
-</div>
-
-<div class="card">
-<h3>Hostel Outpass Management System</h3>
-
-<p>
-Role-based automation platform with QR verification.
+Full-stack app replacing the college's manual outpass process
+(paper, email and WhatsApp), with parent OTP login, role-based
+approval routing to teachers and wardens based on academic-calendar
+rules, and QR e-outpasses scanned at the main gate for exit and return.
+Submitted to the college administration for adoption as the official
+outpass system.
 </p>
 
 <p>
@@ -148,28 +160,53 @@ Flutter, PHP, MySQL
 </div>
 
 <div class="card">
-<h3>Restaurant Ordering System</h3>
+<h3>CoralSense AI</h3>
+
+<p class="card-meta">Oceanic AI Lab (college-funded) · Ongoing</p>
 
 <p>
-Multi-page ordering website with dynamic cart.
+AI-integrated, low-cost drifting buoy for coral reef health assessment,
+combining underwater imaging, temperature, pH and salinity sensing, and
+GPS for geo-referenced reef-health records. I'm building the AI pipeline:
+underwater image enhancement and U-Net segmentation classifying coral as
+Healthy, Bleached or Dead, trained on the Coralscapes dataset
+(2,075 expert-annotated images).
 </p>
 
 <p>
 <strong>Tech:</strong>
-HTML, CSS, JavaScript
+Python, U-Net, Computer Vision, Sensors, GPS
 </p>
 </div>
 
 <div class="card">
-<h3>HydroNet</h3>
+<h3>Crop Yield Prediction System</h3>
 
 <p>
-AI + IoT based hydroponic farming startup project.
+End-to-end ML pipeline on a 1M+ row dataset; trained Linear Regression
+and XGBRFRegressor models (R² ≈ 0.91) and deployed the model as a
+Flask web application.
 </p>
 
 <p>
 <strong>Tech:</strong>
-Python, IoT, ESP32, Hydroponics
+Python, Scikit-learn, XGBoost, Flask
+</p>
+</div>
+
+<div class="card">
+<h3>Spoken Language Identification</h3>
+
+<p class="card-meta">NIT Goa Research Internship</p>
+
+<p>
+Identifies 8 Indian languages from speech using MFCC features;
+tuned SVM reached 91.99% test accuracy, served through a Flask web app.
+</p>
+
+<p>
+<strong>Tech:</strong>
+Python, Scikit-learn, XGBoost, Flask
 </p>
 </div>
 
@@ -178,41 +215,76 @@ Python, IoT, ESP32, Hydroponics
 </div>
 </section>
 
+<section id="publications" class="section container">
+
+<h2>Publications and Presentations</h2>
+
+<div class="card">
+
+<ul class="pub-list">
+<li>
+<strong>Uncertainty-Aware, Explainable AutoML for Crop Yield Prediction: A Conformal Prediction Approach</strong> (First Author).
+Accepted and presented at Big Data and AI 2026 (BDA 2026), BITS Pilani, September 2026.
+</li>
+<li>
+<strong>Uncertainty-Aware Distributed Clustering of Streaming Data</strong> (First Author).
+Under review, ICITIIT 2027, IIIT Kottayam.
+</li>
+<li>
+<strong>Algorithmic Myopia in Platform Ecosystems: Exploitation vs. Entry in Gig-Economy Labor Markets</strong> (Co-author).
+Accepted after double-blind review for poster presentation, India Strategy Conference (ISC) 2026, IIM Bangalore, December 2026.
+</li>
+<li>
+<strong>CoralSense AI: AI-Integrated Drifting Buoy Platform for Coral Reef Health Assessment</strong> (Co-author).
+Oral presentation, OCEANAI-2026, Sathyabama Research Park, Chennai, September 2026.
+</li>
+</ul>
+
+</div>
+
+</section>
+
 <section id="skills" class="section container">
 
 <h2>Technical Skills</h2>
 
-<h3>Programming</h3>
+<h3>Languages</h3>
 <ul class="skills-list">
 <li>Python</li>
 <li>Java</li>
 <li>C</li>
 <li>JavaScript</li>
+<li>PHP</li>
+<li>Dart</li>
+<li>SQL</li>
 </ul>
 
-<h3>Web Development</h3>
+<h3>Web and Mobile</h3>
 <ul class="skills-list">
+<li>Flutter</li>
+<li>Flask</li>
 <li>HTML</li>
 <li>CSS</li>
-<li>JavaScript</li>
-<li>Flask</li>
 </ul>
 
 <h3>Machine Learning</h3>
 <ul class="skills-list">
-<li>Scikit-Learn</li>
+<li>Scikit-learn</li>
 <li>XGBoost</li>
-<li>Pandas</li>
 <li>NumPy</li>
+<li>Pandas</li>
+<li>Matplotlib</li>
+<li>Classification &amp; Regression</li>
+<li>Cross-Validation</li>
+<li>Conformal Prediction</li>
+<li>MFCC Speech Features</li>
+<li>U-Net Semantic Segmentation</li>
 </ul>
 
-<h3>Tools</h3>
+<h3>Databases and Tools</h3>
 <ul class="skills-list">
-<li>Git</li>
-<li>GitHub</li>
-<li>VS Code</li>
-<li>Arduino IDE</li>
 <li>MySQL</li>
+<li>Git</li>
 </ul>
 
 </section>
@@ -224,11 +296,20 @@ Python, IoT, ESP32, Hydroponics
 <div class="card">
 
 <ul>
-<li>CGPA 9.69</li>
-<li>HydroNet Startup Project</li>
-<li>NIT Goa Summer Internship</li>
-<li>Built ML model with R² ≈ 0.91</li>
-<li>Innovation and entrepreneurship participation</li>
+<li>Second Prize, Smart India Hackathon (SIH) 2025 Internal Round, for <em>HydroNet</em> (AI + IoT hydroponics concept).</li>
+<li>Second Prize, Smart India Hackathon (SIH) 2024 Internal Round, for <em>Ayushvatika: Virtual Herbal Garden</em>.</li>
+<li>First Prize, Catalyst Idea Pitch (inter-college competition), for <em>HydroNet</em>.</li>
+</ul>
+
+</div>
+
+<h3 class="subhead">Positions of Responsibility</h3>
+
+<div class="card">
+
+<ul>
+<li>Documentation Lead, IEEE Oceanic Engineering Society (OES), CVV Student Branch</li>
+<li>Documentation Lead, IEDC, CVV</li>
 </ul>
 
 </div>
@@ -239,12 +320,13 @@ Python, IoT, ESP32, Hydroponics
 
 <h2>Contact</h2>
 
-<p>Email: mathewmilan86@gmail.com</p>
+<p>Email: <a href="mailto:mathewmilan86@gmail.com">mathewmilan86@gmail.com</a></p>
 <p>Phone: +91 8089027452</p>
 
 <p>
 <a href="https://github.com/MilanMathew86">GitHub</a> |
-<a href="https://www.linkedin.com/in/milan-mathew-19216b326">LinkedIn</a>
+<a href="https://www.linkedin.com/in/milan-mathew-19216b326">LinkedIn</a> |
+<a href="https://reachmilan.com">reachmilan.com</a>
 </p>
 
 </section>
@@ -266,4 +348,3 @@ Designed and Developed by Milan Mathew.
 
 </body>
 </html>
-
